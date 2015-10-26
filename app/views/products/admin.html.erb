@@ -1,0 +1,6 @@
+<% @products.each do |p| %>
+	<%= p.name %>
+	<% p.product_attributes.each do |pa| %>
+		<%= pa.facet.att %>
+	<% end %>
+<% end %>

@@ -1,0 +1,43 @@
+<% if flash[:errors] %>
+	<% flash[:errors].each do |e| %>
+		<%= e %>
+	<% end %>
+<% end %>
+<form action = "/users" method = "post">
+	<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
+	<div class = "row">
+		<div class="col-md-6 col-md-offset-2">
+			<label>First Name</label>
+				<input type = "text" name = "user[first_name]" class = "form-control">
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-6 col-md-offset-2">
+			<label>Last Name</label>
+				<input type = "text" name = "user[last_name]" class = "form-control">
+		</div>
+	</div>
+	<div class = "row">	
+		<div class="col-md-6 col-md-offset-2">
+			<label>Email</label>
+				<input type = "email" name = "user[email]" class = "form-control">
+		</div>
+	</div>
+	<div class = "row">	
+		<div class="col-md-6 col-md-offset-2">
+			<label>Password</label>
+				<input type = "password" name = "user[password]" class = "form-control">
+		</div>
+	</div>
+	<div class = "row">
+		<div class="col-md-6 col-md-offset-2">
+			<label>Confirm Password</label>
+				<input type = "password" name = "user[confirm_password]" class = "form-control">
+		</div>
+	</div>
+	<div class = "row">
+		<div class = "col-md-6 col-md-offset-2">	
+			<input type = "submit" value = "Register User" class = "btn btn-primary">
+		</div>
+	</div>
+</form>

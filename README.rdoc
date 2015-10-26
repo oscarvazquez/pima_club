@@ -1,0 +1,11 @@
+== README
+To get this app runnning, 
+
+ - run rake db:migrate
+ - run rake db:seed
+ - run bundle install
+
+Two members will have been created for you
+
+One member account - person@gmail.com 
+one admin account - oscar@gmail.com

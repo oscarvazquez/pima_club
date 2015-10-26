@@ -1,0 +1,45 @@
+
+<h1>Add a New Product</h1>
+<form action = "/products" method = "post">
+	<div class = "col-lg-6">
+		<input type = "hidden" name = "authenticity_token" value = "<%= form_authenticity_token %>">
+		Name <input type = "text" name = "name" class = "form-control">
+		Price <input type = "text" name = "price" class = "form-control">
+		Availability <input type = "text" name = "availability" class = "form-control"></br>
+		Colors <select class = "form-control" name = "color[]" id = "color" class = "form-control" multiple>
+		<% @attributes['colors'].each do |c| %>
+			<option value = "<%= c.id %>"><%= c.att %></option>
+		<% end %>
+		</select>
+		Styles <select name = "style[]" id = "style" class = "form-control" multiple>
+		<% @attributes['styles'].each do |s| %>
+			<option value = "<%= s.id %>"><%= s.att %></option>
+		<% end %>
+		</select>
+		Sizes <select name = "size[]" id = "size" class = "form-control" multiple>
+		<% @attributes['sizes'].each do |s| %>
+			<option value = "<%= s.id %>"><%= s.att %></option>
+		<% end %>
+		</select>
+		<input type = "submit" value = "Create Product" class = "btn btn-primary">
+
+	</div>
+</form>
+
+	<script>
+		$(document).ready(function(){
+			console.log('doing somethins');
+			$("#size").select2({
+				placeholder: "Choose a Size",
+				theme: "bootstrap"
+			});
+			$("#color").select2({
+				placeholder: "Choose a Color",
+				theme: "bootstrap"
+			});
+			$("#style").select2({
+				placeholder: "Choose a Style",
+				theme: "bootstrap"
+			});
+		})
+	</script>
