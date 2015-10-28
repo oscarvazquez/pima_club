@@ -95574,3 +95574,2188 @@ Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 11:44
   [1m[35m (0.4ms)[0m  COMMIT
   [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
   [1m[35mUser Load (1.8ms)[0m  SELECT "users".* FROM "users"
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:46:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (couldn't find file 'grayscale'
+  (in /Users/Shain/Desktop/consultancy/pima_club/app/assets/stylesheets/application.css:13)):
+    2: <html>
+    3: <head>
+    4:   <title>PimaClub</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    7:    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    8: 
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__800189084018928622_70272940682800'
+
+
+  Rendered /Users/Shain/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/Shain/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Shain/.rvm/gems/ruby-2.2.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:47:33 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_nav.html.erb (22.4ms)
+Completed 200 OK in 250ms (Views: 241.8ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:47:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 100ms (Views: 98.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:47:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:52:20 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered partials/_nav.html.erb (1.4ms)
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:52:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered partials/_nav.html.erb (1.5ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:53:21 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:53:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered partials/_nav.html.erb (1.0ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:04 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:05 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:54:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:54:08 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered partials/_nav.html.erb (1.0ms)
+Completed 200 OK in 110ms (Views: 109.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:54:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered partials/_nav.html.erb (1.0ms)
+Completed 200 OK in 108ms (Views: 107.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:27 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:55:28 -0700
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+(facebook) Request phase initiated.
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered partials/_nav.html.erb (1.2ms)
+Completed 200 OK in 105ms (Views: 104.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:55:55 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered partials/_nav.html.erb (0.9ms)
+Completed 200 OK in 101ms (Views: 99.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:55:58 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:56:18 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered partials/_nav.html.erb (1.1ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:56:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:57:07 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered partials/_nav.html.erb (1.4ms)
+Completed 200 OK in 102ms (Views: 101.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:57:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered partials/_nav.html.erb (1.0ms)
+Completed 200 OK in 126ms (Views: 125.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 14:59:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 14:59:34 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" IS NULL LIMIT 1
+  Rendered partials/_nav.html.erb (1.0ms)
+Completed 200 OK in 100ms (Views: 99.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:34 -0700
+
+
+Started POST "/sessions/new" for 127.0.0.1 at 2015-10-28 14:59:47 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"qCP5U/LKJ9gWVMpEgVxM4b7sWWRB4EGXsJI1AHGyadY=", "user"=>{"email"=>"oscar@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'oscar@gmail.com' LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 84ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-10-28 14:59:47 -0700
+Processing by DashboardsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users"."first_name", "users"."last_name", "users"."email" FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered dashboards/index.html.erb within layouts/admin (0.5ms)
+  Rendered partials/_nav_admin.html.erb (0.4ms)
+Completed 200 OK in 105ms (Views: 101.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:47 -0700
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-10-28 14:59:53 -0700
+Processing by DashboardsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users"."first_name", "users"."last_name", "users"."email" FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered dashboards/index.html.erb within layouts/admin (0.1ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 93ms (Views: 90.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:53 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 14:59:53 -0700
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mColor Load (1.6ms)[0m  SELECT "colors".* FROM "colors"
+  [1m[36mStyle Load (0.9ms)[0m  [1mSELECT "styles".* FROM "styles"[0m
+  [1m[35mSize Load (0.5ms)[0m  SELECT "sizes".* FROM "sizes"
+  Rendered products/new.html.erb within layouts/admin (17.2ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 117ms (Views: 101.9ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:54 -0700
+
+
+Started GET "/products/admin" for 127.0.0.1 at 2015-10-28 14:59:54 -0700
+Processing by ProductsController#admin as HTML
+  [1m[36mProduct Load (1.7ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/admin.html.erb within layouts/admin (3.7ms)
+  Rendered partials/_nav_admin.html.erb (0.1ms)
+Completed 200 OK in 107ms (Views: 101.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:54 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 14:59:55 -0700
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.2ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.2ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.1ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (2.0ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 95.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 14:59:55 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:02:15 -0700
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.2ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.2ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.2ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (2.2ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 131ms (Views: 128.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:16 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.3ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.2ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.2ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (2.2ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 92.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:19 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:02:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.6ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.3ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.5ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (28.3ms)
+  Rendered partials/_nav_admin.html.erb (0.4ms)
+Completed 200 OK in 301ms (Views: 239.6ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:33 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered partials/_nav.html.erb (8.7ms)
+Completed 200 OK in 123ms (Views: 121.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 15:02:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered partials/_nav.html.erb (1.7ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 15:02:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+Processing by WelcomesController#index as HTML
+  Rendered welcomes/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered partials/_nav.html.erb (1.7ms)
+Completed 200 OK in 116ms (Views: 114.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started GET "/assets/fontawesome-webfont.woff" for 127.0.0.1 at 2015-10-28 15:02:51 -0700
+
+
+Started POST "/sessions/new" for 127.0.0.1 at 2015-10-28 15:02:58 -0700
+Processing by SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"qCP5U/LKJ9gWVMpEgVxM4b7sWWRB4EGXsJI1AHGyadY=", "user"=>{"email"=>"oscar@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'oscar@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 80ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2015-10-28 15:02:58 -0700
+Processing by DashboardsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users"."first_name", "users"."last_name", "users"."email" FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered dashboards/index.html.erb within layouts/admin (0.4ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:02:59 -0700
+
+
+Started GET "/products/admin" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+Processing by ProductsController#admin as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/admin.html.erb within layouts/admin (1.2ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 111ms (Views: 107.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:00 -0700
+
+
+Started GET "/products/admin" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+Processing by ProductsController#admin as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/admin.html.erb within layouts/admin (0.9ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 109ms (Views: 108.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:02 -0700
+
+
+Started GET "/products/admin" for 127.0.0.1 at 2015-10-28 15:03:05 -0700
+Processing by ProductsController#admin as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/admin.html.erb within layouts/admin (0.7ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 115ms (Views: 113.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:05 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:05 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:05 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.3ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.2ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.2ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (3.8ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 119.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:06 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.3ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.2ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.1ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (2.2ms)
+  Rendered partials/_nav_admin.html.erb (0.1ms)
+Completed 200 OK in 118ms (Views: 115.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:03:07 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:05:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.4ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.4ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.4ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (18.7ms)
+  Rendered partials/_nav_admin.html.erb (0.3ms)
+Completed 200 OK in 299ms (Views: 248.0ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:45 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:05:47 -0700
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.2ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.2ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.1ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (1.7ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 111ms (Views: 108.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:05:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:50 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:50 -0700
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:05:50 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:06:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.4ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.4ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (2.8ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (26.1ms)
+  Rendered partials/_nav_admin.html.erb (0.3ms)
+Completed 200 OK in 301ms (Views: 238.7ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:33 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:33 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:33 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:06:34 -0700
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.5ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.5ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.5ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (6.6ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 151ms (Views: 145.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+
+
+Started GET "/products/new" for 127.0.0.1 at 2015-10-28 15:06:35 -0700
+Processing by ProductsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mColor Load (0.3ms)[0m  [1mSELECT "colors".* FROM "colors"[0m
+  [1m[35mStyle Load (0.2ms)[0m  SELECT "styles".* FROM "styles"
+  [1m[36mSize Load (0.2ms)[0m  [1mSELECT "sizes".* FROM "sizes"[0m
+  Rendered products/new.html.erb within layouts/admin (2.5ms)
+  Rendered partials/_nav_admin.html.erb (0.0ms)
+Completed 200 OK in 131ms (Views: 128.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-10-28 15:06:36 -0700

@@ -10,14 +10,16 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require grayscale
  *= require font-awesome
- *= require select2
- *= require select2-bootstrap
+ *= select2
+ *= select2-bootstrap
  *= require_tree .
  *= require_self
  */
 
+.content{ 
+    margin-top: 30px; /* increase top margin by height of fixed nav-bar */
+}
 
 #wrapper {
     padding-left: 0;
