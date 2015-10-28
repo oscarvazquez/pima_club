@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-
+    
     log_out
 
   end
@@ -44,7 +44,7 @@ class SessionsController < ApplicationController
 
   def log_out
     session[:user_id] = nil
-    redirect_to "/products"
+    redirect_to welcomes_path
   end
 
 end

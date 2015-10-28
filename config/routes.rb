@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
 
   root 'welcomes#index'
-
-  resources :products
-  resources :sessions
-  resources :subscriptions
-  resources :users
  
   # NAV ROUTING
   get 'about' => 'welcomes#about'
@@ -21,6 +16,15 @@ Rails.application.routes.draw do
   
   # ADMIN
   get 'products/admin' => 'products#admin'
+
+
+  # RESOURCEFUL ROUTES
+  resources :products
+  resources :sessions
+  resources :subscriptions
+  resources :users
+  resources :welcomes
+
 
   # OAUTH LOGIN
   get 'auth/:provider/callback', to: 'sessions#create'
