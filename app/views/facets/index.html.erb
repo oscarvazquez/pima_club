@@ -1,40 +1,40 @@
-<div class = "col-lg-4">
+<div class = "col-lg-4 col-sm-6">
 	<h3>Color</h3>
 	<ul>
 		<% @attributes['colors'].each do |a| %>
-			<li><%=	a.att %>
+			<li><h4><%=	a.att %></h4>
 				<form action = "/colors/<%=a.id%>" method = "post">
 					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
 					<input type = "hidden" name = "_method" value = "delete">
-					<input type = "submit" value = "delete">
+					<input type = "submit" value = "delete" class = "btn btn-primary">
 				</form>
 			</li>
 		<% end %>
 	</ul>
 </div>
-<div class = "col-lg-4">
+<div class = "col-lg-4 col-sm-6">
 	<h3>Style</h3>
 	<ul>
 		<% @attributes['styles'].each do |a| %>
-			<li><%=	a.att %>
+			<li><h4><%=	a.att %></h4>
 				<form action = "/styles/<%=a.id%>" method = "post">
 					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
 					<input type = "hidden" name = "_method" value = "delete">
-					<input type = "submit" value = "delete">
+					<input type = "submit" value = "delete" class = "btn btn-primary">
 				</form>
 			</li>
 		<% end %>
 	</ul>
 </div>
-<div class = "col-lg-4">
+<div class = "col-lg-4 col-sm-6">
 	<h3>Sizes</h3>
 	<ul>
 		<% @attributes['sizes'].each do |a| %>
-			<li><%=	a.att %>
+			<h4><li><%=	a.att %></h4>
 				<form action = "/sizes/<%=a.id%>" method = "post">
 					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
 					<input type = "hidden" name = "_method" value = "delete">
-					<input type = "submit" value = "delete">
+					<input type = "submit" value = "delete" class = "btn btn-primary">
 				</form>
 			</li>
 		<% end %>

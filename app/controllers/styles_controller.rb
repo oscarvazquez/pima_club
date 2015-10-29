@@ -5,7 +5,11 @@ class StylesController < ApplicationController
 	end
 
 	def destroy
-		fail
+		style = Style.find(params[:id])
+		style.destroy
+		redirect_to "/facets"
 	end
 
 end
+
+

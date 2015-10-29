@@ -8,14 +8,11 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body id='wrapper'>
+<%= render "/partials/side_nav_admin" %>
+  <body id='wrapper'>
 
-    <%= render "/partials/nav_admin" %>
-    
-    <div id="page-content-wrapper" class='content'>
-        
-        <%= render "/partials/side_nav_admin" %>
-        
+    <div id="page-content-wrapper" class=''>
+                
         <div class="container-fluid">
             <div class="row">
                 

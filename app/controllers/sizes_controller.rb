@@ -5,7 +5,9 @@ class SizesController < ApplicationController
 	end
 
 	def destroy
-		fail
+		size = Size.find(params[:id])
+		size.destroy
+		redirect_to "/facets"
 	end
 
 end
