@@ -8,14 +8,44 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body id='wrapper'>
 
-    <%= render "/partials/nav_admin" %>
-    
-    <div id="page-content-wrapper" class='content'>
+<body>
+<!-- TOP NAV -->
+  <div class="row">
+    <div class="col-lg-12">
+      <%= render "/partials/nav_admin" %> 
+    </div>
+  </div>
+<!-- END TOP NAV -->  
+  <div class="container">
+
+<!-- CONTENT -->
+  <div class = "row content">
+    <!-- <div class = "col-lg-12"> -->
+      <%= yield %>
+    <!-- </div> -->
+  </div>
+<!-- END CONTENT -->
+  </div>
+
+<!-- FOOTER -->
+  <footer class="row" style='background-color:white;'>
+    <div class="col-lg-12">
+      <%= render "/partials/footer" %>
+    </div>
+  </footer>
+<!-- END FOOTER -->
+
+</body>
+</html>
+
+
+<div id="page-content-wrapper" class='content'>
         
-        <%= render "/partials/side_nav_admin" %>
-        
+        <div id='#sidebar-wrapper'>
+            <%= render "/partials/side_nav_admin" %>
+        </div>
+
         <div class="container-fluid">
             <div class="row">
                 
@@ -26,6 +56,3 @@
             </div>
         </div>
     </div>
-
-</body>
-</html>

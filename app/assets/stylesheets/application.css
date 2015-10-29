@@ -11,29 +11,20 @@
  * file per style scope.
  *
  *= require font-awesome
- *= select2
- *= select2-bootstrap
+ *= require select2
+ *= require select2-bootstrap
  *= require_tree .
  *= require_self
  */
 
-.content{ 
-    margin-top: 30px; /* increase top margin by height of fixed nav-bar */
-}
 
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
+/* TOP NAV */
 
-#wrapper.toggled {
-    padding-left: 250px;
-}
 
-#sidebar-wrapper {
+
+/* ADMIN SIDE NAV */
+
+/*#sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     left: 250px;
@@ -46,26 +37,9 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
+}*/
 
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-
-/* Sidebar Styles */
-
-.sidebar-nav {
+/*.sidebar-nav {
     position: absolute;
     top: 0;
     width: 250px;
@@ -109,32 +83,70 @@
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
+}*/
+
+
+/* CONTAINER */
+
+/*.container {
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}*/
+
+/*.container.toggled {
+    padding-left: 0;
 }
 
-@media(min-width:768px) {
-    #wrapper {
-        padding-left: 250px;
-    }
-
-    #wrapper.toggled {
-        padding-left: 0;
-    }
-
-    #sidebar-wrapper {
-        width: 250px;
-    }
-
-    #wrapper.toggled #sidebar-wrapper {
-        width: 0;
-    }
-
-    #page-content-wrapper {
-        padding: 20px;
-        position: relative;
-    }
-
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
+#sidebar-wrapper {
+    width: 250px;
 }
+
+.container.toggled #sidebar-wrapper {
+    width: 0;
+}
+
+#page-content-wrapper {
+    padding: 20px;
+    position: relative;
+}
+
+.container.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+}
+
+.container.toggled {
+    padding-left: 250px;
+}*/
+
+
+/* CONTENT */
+
+.content {
+    margin-top: 30px;
+}
+
+/*.container.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+.container.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}*/
+
+
+
+/* MISC 
+
+
