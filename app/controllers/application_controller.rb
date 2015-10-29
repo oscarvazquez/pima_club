@@ -20,6 +20,14 @@ class ApplicationController < ActionController::Base
       end
     end
 
+    def grab_all_attributes
+      @attributes = Hash.new
+      @attributes['colors'] = Color.all
+      @attributes['styles'] = Style.all
+      @attributes['sizes'] = Size.all
+      @attributes
+    end
+
     helper_method :current_user, :logged_in?
 
     def current_user

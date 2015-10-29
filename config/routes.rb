@@ -20,6 +20,14 @@ Rails.application.routes.draw do
 
   resources 'subscriptions'
 
+  resources 'facets'
+
+  resources 'colors'
+
+  resources 'styles'
+
+  resources 'sizes'
+
 
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
