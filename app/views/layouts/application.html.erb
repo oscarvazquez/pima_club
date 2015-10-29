@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title>PimaClub</title>
@@ -9,26 +8,25 @@
 
 </head>
 
-<!-- TOP NAV -->
-	<div class="row">
-		<%= render "/partials/nav" %> 
-	</div>
-<!-- END TOP NAV -->	
 <body>
-	
-	<!-- <div class="container"> -->
+
+	<!-- TOP NAV -->
+		<div class="row">
+			<%= render "/partials/nav" %> 
+		</div>
+	<!-- END TOP NAV -->	
+		
 	<!-- CONTENT -->
 		<div class = "row content">
 			<%= yield %>
 		</div>
 	<!-- END CONTENT -->
-	<!-- </div> -->
 
-<!-- FOOTER -->
-	<footer class="row">
-		<%= render "/partials/footer" %>
-	</footer>
-<!-- END FOOTER -->
+	<!-- FOOTER -->
+		<footer class="row">
+			<%= render "/partials/footer" %>
+		</footer>
+	<!-- END FOOTER -->
 
 </body>
 </html>

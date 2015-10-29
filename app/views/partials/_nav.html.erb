@@ -4,6 +4,12 @@
         padding: .25rem 1rem;
     }
 
+    .navbar-center {
+        position: absolute;
+        width: 20%;
+        left: 40%;
+    }
+
 </style>
 
 <nav class="navbar-inverse navbar-fixed-top navbar" role="navigation">
@@ -16,9 +22,8 @@
         </a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
+    <div class="collapse navbar-collapse navbar-main-collapse">
+        <ul class="nav navbar-nav navbar-center">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
             <li class="hidden">
                 <a href="#page-top"></a>
@@ -32,6 +37,9 @@
             <li>
                 <a href="/subscriptions">Subscription</a>
             </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
             <% if logged_in? -%>
                 <li>
                     <a href = "/sessions/destroy">Log Out</a>
@@ -48,8 +56,8 @@
                 <li>
                     <a href = "/dashboard">Dashboard</a>
                 </li>
-            <% end %>
-
+            <% end %>    
         </ul>
     </div>
+
 </nav>
