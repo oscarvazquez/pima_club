@@ -24,14 +24,6 @@ class ProductsController < ApplicationController
 
 	  private 
 
-	  def grab_all_attributes
-	  	@attributes = Hash.new
-	  	@attributes['colors'] = Color.all
-	  	@attributes['styles'] = Style.all
-	  	@attributes['sizes'] = Size.all
-	  	@attributes
-	  end
-
 	  def create_product
 	  	p = Product.create(name: params[:name])
 	  	if p.errors.count > 0

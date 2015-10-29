@@ -25,6 +25,14 @@ Rails.application.routes.draw do
   resources :users
   resources :welcomes
 
+  resources 'facets'
+
+  resources 'colors'
+
+  resources 'styles'
+
+  resources 'sizes'
+
 
   # OAUTH LOGIN
   get 'auth/:provider/callback', to: 'sessions#create'

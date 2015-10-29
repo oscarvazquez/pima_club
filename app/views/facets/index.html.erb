@@ -1,0 +1,42 @@
+<div class = "col-lg-4">
+	<h3>Color</h3>
+	<ul>
+		<% @attributes['colors'].each do |a| %>
+			<li><%=	a.att %>
+				<form action = "/colors/<%=a.id%>" method = "post">
+					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
+					<input type = "hidden" name = "_method" value = "delete">
+					<input type = "submit" value = "delete">
+				</form>
+			</li>
+		<% end %>
+	</ul>
+</div>
+<div class = "col-lg-4">
+	<h3>Style</h3>
+	<ul>
+		<% @attributes['styles'].each do |a| %>
+			<li><%=	a.att %>
+				<form action = "/styles/<%=a.id%>" method = "post">
+					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
+					<input type = "hidden" name = "_method" value = "delete">
+					<input type = "submit" value = "delete">
+				</form>
+			</li>
+		<% end %>
+	</ul>
+</div>
+<div class = "col-lg-4">
+	<h3>Sizes</h3>
+	<ul>
+		<% @attributes['sizes'].each do |a| %>
+			<li><%=	a.att %>
+				<form action = "/sizes/<%=a.id%>" method = "post">
+					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
+					<input type = "hidden" name = "_method" value = "delete">
+					<input type = "submit" value = "delete">
+				</form>
+			</li>
+		<% end %>
+	</ul>
+</div>
