@@ -11,8 +11,8 @@
  * file per style scope.
  *
  *= require font-awesome
- *= select2
- *= select2-bootstrap
+ *= require select2
+ *= require select2-bootstrap
  *= require_tree .
  *= require_self
  */
