@@ -2,25 +2,24 @@
 <html>
 <head>
   <title>PimaClub</title>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
-   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-<style>
-	.marginr{ 
-		margin-top: 30px
-	}
-</style>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
-<body>
 
-<%= render "/layouts/nav" %> 
-
-<div class = "row marginr">
-	<div class = "col-lg-12">
-		<%= yield %>
+<body id='wrapper' class='container'>
+	<div class="row">
+		<div class="col-lg-12">
+			<%= render "/partials/nav" %> 
+		</div>
 	</div>
-</div>
+	<div class = "row content">
+		<div class = "col-lg-12">
+			<%= yield %>
+		</div>
+	</div>
+
 </body>
 </html>

@@ -13,7 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require grayscale
-//= require jquery.easing.min
-//= require select2
+//= select2
 //= require_tree
