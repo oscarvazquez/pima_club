@@ -18,6 +18,15 @@
  */
 
 
+/* TODO: ADD LEGIT NORMALIZE CSS */
+
+*, div, .col-lg-12, .row {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
 /* TOP NAV */
 
 
