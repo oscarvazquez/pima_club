@@ -8,3 +8,8 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
 # Rails.application.config.assets.precompile += %w( ng-app/app.js )
+
+Rails.application.config.assets.precompile += %w( remodal.css )
+Rails.application.config.assets.precompile += %w( remodal-default-theme.css )
+Rails.application.config.assets.precompile += %w( admin_layout/admin_layout.css )
+Rails.application.config.assets.precompile += %w( admin_layout/admin_layout.js )

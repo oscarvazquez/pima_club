@@ -1,27 +1,64 @@
-
-<h1>Add a New Product</h1>
+<style>
+	div {
+		margin-bottom: 15px;
+	}
+	select {
+		margin-bottom: 15px;
+	}
+</style>
 <form action = "/products" method = "post">
 	<div class = "col-lg-6">
+		<div class = "col-lg-offset-2">
+			<h1>Add a New Product</h1>
+		</div>
 		<input type = "hidden" name = "authenticity_token" value = "<%= form_authenticity_token %>">
-		Name <input type = "text" name = "name" class = "form-control">
-		Price <input type = "text" name = "price" class = "form-control">
-		Availability <input type = "text" name = "availability" class = "form-control"></br>
-		Colors <select class = "form-control" name = "color[]" id = "color" class = "form-control" multiple>
-		<% @attributes['colors'].each do |c| %>
-			<option value = "<%= c.id %>"><%= c.att %></option>
-		<% end %>
-		</select>
-		Styles <select name = "style[]" id = "style" class = "form-control" multiple>
-		<% @attributes['styles'].each do |s| %>
-			<option value = "<%= s.id %>"><%= s.att %></option>
-		<% end %>
-		</select>
-		Sizes <select name = "size[]" id = "size" class = "form-control" multiple>
-		<% @attributes['sizes'].each do |s| %>
-			<option value = "<%= s.id %>"><%= s.att %></option>
-		<% end %>
-		</select>
-		<input type = "submit" value = "Create Product" class = "btn btn-primary">
+		<div class = "form-group">
+			<label for = "name" class="col-lg-offset-1 col-lg-3 control-label">Name: </label>
+			<div class = "col-lg-8">
+				<input type = "text" name = "name" class = "form-control">
+			</div>
+		</div>
+		<div class = "form-group">
+			<label for = "price" class="col-lg-offset-1 col-lg-3 control-label">Price: </label>
+			<div class = "col-lg-8">
+				<input type = "text" name = "price" class = "form-control">
+			</div>
+		</div>
+		<div class = "form-group">
+			<label for = "color[]" class="col-lg-offset-1 col-lg-3 control-label">Colors: </label>
+			<div class = "col-lg-8">
+				<select type = "text" name = "color[]" class = "form-control" id = "color" multiple>
+					<% @attributes['colors'].each do |c| %>
+						<option value = "<%= c.id %>"><%= c.att %></option>
+					<% end %>
+				</select>
+			</div>
+		</div>
+		<div class = "form-group">
+			<label for = "style[]" class="col-lg-offset-1 col-lg-3 control-label">Styles: </label>
+			<div class = "col-lg-8">
+				<select type = "text" name = "style[]" class = "form-control" id = "style" multiple>
+					<% @attributes['styles'].each do |s| %>
+						<option value = "<%= s.id %>"><%= s.att %></option>
+					<% end %>
+				</select>
+			</div>
+		</div>
+		<div class = "form-group">
+			<label for = "size[]" class="col-lg-offset-1 col-lg-3 control-label">Sizes: </label>
+			<div class = "col-lg-8">
+				<select type = "text" name = "size[]" class = "form-control" id = "size" multiple>
+					<% @attributes['sizes'].each do |s| %>
+						<option value = "<%= s.id %>"><%= s.att %></option>
+					<% end %>
+				</select>
+			</div>
+		</div>
+		<div class = "form-group">
+			<div class = "col-lg-offset-8">
+				<input type = "submit" value = "Create Product" class = "btn btn-primary">
+			</div>
+		</div>
 
 	</div>
 </form>

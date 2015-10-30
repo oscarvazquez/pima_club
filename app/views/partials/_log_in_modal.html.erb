@@ -1,0 +1,47 @@
+<!-- LOGIN MODAL -->
+<div class="remodal" data-remodal-id="login-modal" role="dialog" aria-labelledby="login-modal" aria-describedby="login-modal-desc">
+  
+	<form id='sign-up' class="form-horizontal" action='/sessions/new' method='post'>
+    	<input type='hidden' name="authenticity_token" value="<%= form_authenticity_token %>">
+    	
+    	<div class="form-group">
+            <div class="col-lg-offset-4 col-lg-4">
+                <h1>Log In</h1>
+            </div>
+        </div>
+        
+    	<div class="form-group">
+            <label for="email" class="col-lg-offset-1 col-lg-3 control-label">Email</label>
+	        <div class="col-lg-6">
+	            <input type="text" class="form-control" id="email" name='user[email]' placeholder="Email">
+	        </div>
+        </div>
+
+    	<div class="form-group">
+            <label for="password" class="col-lg-offset-1 col-lg-3 control-label">Password</label>
+	        <div class="col-lg-6">
+	            <input type="password" class="form-control" id="password" name='user[password]' placeholder="Password">
+	        </div>
+      	</div>
+
+    	<div class="form-group">
+            <div class="row">
+                <div class="col-lg-offset-4 col-lg-2">
+                    <input type="submit" class="btn btn-success" value='Log In'>
+                </div>
+                <div class="col-lg-4">
+                    <a href="/auth/facebook" class="facebook btn btn-primary margin">
+                        <i class="fa fa-facebook"></i> Log in with Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <a class='col-lg-offset-1 col-lg-11' href='/#signup-modal'>New user? Click here to sign up.</a>
+
+  	<!-- <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button> -->
+  	<!-- <button data-remodal-action="confirm" class="remodal-confirm">OK</button> -->
+</div>
+<!-- END LOGIN MODAL -->

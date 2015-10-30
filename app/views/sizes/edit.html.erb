@@ -1,0 +1,6 @@
+<form action = "/sizes/<%= @size.id %>" method = "post">
+	<input type = "hidden" name = "authenticity_token" value = "<%= form_authenticity_token %>">
+	<input type = "hidden" name = "_method" value = "patch">
+	Size: <input type = "text" name = "name" value = "<%= @size.att %>">
+	<input type = "submit" value = 'submit'>
+</form>

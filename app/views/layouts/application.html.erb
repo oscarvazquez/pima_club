@@ -1,25 +1,32 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title>PimaClub</title>
   
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application/application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application/application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
 </head>
 
-<body id='wrapper' class='container'>
-	<div class="row">
-		<div class="col-lg-12">
+<body>
+
+	<!-- TOP NAV -->
+		<div class="row">
 			<%= render "/partials/nav" %> 
 		</div>
-	</div>
-	<div class = "row content">
-		<div class = "col-lg-12">
+	<!-- END TOP NAV -->	
+		
+	<!-- CONTENT -->
+		<div class = "row content">
 			<%= yield %>
 		</div>
-	</div>
+	<!-- END CONTENT -->
+
+	<!-- FOOTER -->
+		<footer class="row">
+			<%= render "/partials/footer" %>
+		</footer>
+	<!-- END FOOTER -->
 
 </body>
 </html>

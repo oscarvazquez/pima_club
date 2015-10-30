@@ -6,8 +6,9 @@
 				<form action = "/colors/<%=a.id%>" method = "post">
 					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
 					<input type = "hidden" name = "_method" value = "delete">
-					<input type = "submit" value = "delete" class = "btn btn-primary">
+					<input type = "submit" value = "delete" class = "btn btn-danger">
 				</form>
+				<a href = "/colors/<%=a.id%>/edit" class = "btn btn-primary">Edit</a>
 			</li>
 		<% end %>
 	</ul>
@@ -20,8 +21,9 @@
 				<form action = "/styles/<%=a.id%>" method = "post">
 					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
 					<input type = "hidden" name = "_method" value = "delete">
-					<input type = "submit" value = "delete" class = "btn btn-primary">
+					<input type = "submit" value = "delete" class = "btn btn-danger">
 				</form>
+				<a href = "/styles/<%=a.id%>/edit" class = "btn btn-primary">Edit</a>
 			</li>
 		<% end %>
 	</ul>
@@ -34,8 +36,9 @@
 				<form action = "/sizes/<%=a.id%>" method = "post">
 					<input type = "hidden" name = "authenticity_token" value = "<%=form_authenticity_token%>">
 					<input type = "hidden" name = "_method" value = "delete">
-					<input type = "submit" value = "delete" class = "btn btn-primary">
+					<input type = "submit" value = "delete" class = "btn btn-danger">
 				</form>
+				<a href = "/sizes/<%=a.id%>/edit" class = "btn btn-primary">Edit</a>
 			</li>
 		<% end %>
 	</ul>

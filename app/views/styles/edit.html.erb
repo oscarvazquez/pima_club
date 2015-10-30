@@ -1,0 +1,6 @@
+<form action = "/styles/<%= @style.id %>" method = "post">
+	<input type = "hidden" name = "authenticity_token" value = "<%= form_authenticity_token %>">
+	<input type = "hidden" name = "_method" value = "patch">
+	Style: <input type = "text" name = "name" value = "<%= @style.att %>">
+	<input type = "submit" value = 'submit'>
+</form>

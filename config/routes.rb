@@ -24,14 +24,10 @@ Rails.application.routes.draw do
   resources :subscriptions
   resources :users
   resources :welcomes
-
-  resources 'facets'
-
-  resources 'colors'
-
-  resources 'styles'
-
-  resources 'sizes'
+  resources :facets
+  resources :colors
+  resources :styles
+  resources :sizes
 
 
   # OAUTH LOGIN

@@ -1,0 +1,6 @@
+<form action = "/colors/<%= @color.id %>" method = "post">
+	<input type = "hidden" name = "authenticity_token" value = "<%= form_authenticity_token %>">
+	<input type = "hidden" name = "_method" value = "patch">
+	Color: <input type = "text" name = "name" value = "<%= @color.att %>">
+	<input type = "submit" value = 'submit'>
+</form>
