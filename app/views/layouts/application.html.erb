@@ -6,6 +6,15 @@
   <%= javascript_include_tag 'application/application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+
+<style type='text/css'>
+    .banner-section { 
+        height: 70%;
+        border: 1px solid gray;
+    }
+</style>
+
+
 </head>
 
 <body>
@@ -21,6 +30,12 @@
 			<%= yield %>
 		</div>
 	<!-- END CONTENT -->
+
+	<!-- GLOBAL MOODALS -->
+		<%= render 'partials/sign_up_modal' %>
+		<%= render 'partials/log_in_modal' %>
+	<!-- END GLOBAL MODALS -->
+
 
 	<!-- FOOTER -->
 		<footer class="row">

@@ -4,11 +4,9 @@
         padding: .25rem 1rem;
     }
 
-    .navbar-center {
+/*    .navbar-center {
         position: absolute;
-        width: 20%;
-        left: 40%;
-    }
+    }*/
 
 </style>
 
@@ -23,22 +21,16 @@
     </div>
 
     <div class="collapse navbar-collapse navbar-main-collapse">
-        <ul class="nav navbar-nav navbar-center">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden">
-                <a href="#page-top"></a>
-            </li>
-            <li>
-                <a href="/about">About Us</a>
-            </li>
-            <li>
-                <a href="/products">Products</a>
-            </li>
-            <li>
-                <a href="/subscriptions">Subscription</a>
-            </li>
-        </ul>
-
+        <div class='navbar-center'>
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden"><a href="#page-top"></a></li>
+                
+                <li><a href="/subscriptions">Subscriptions</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About Us</a></li>
+            </ul>
+        </div>
         <ul class="nav navbar-nav navbar-right">
             <% if logged_in? -%>
                 <li>
