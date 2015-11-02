@@ -21,6 +21,19 @@ Rails.application.routes.draw do
   
   # ADMIN
   get 'products/admin' => 'products#admin'
+  resources 'users'
+
+  resources 'products'
+
+  resources 'subscriptions'
+
+  resources 'facets'
+
+  resources 'colors'
+
+  resources 'styles'
+
+  resources 'sizes'
 
   # OAUTH LOGIN
   get 'auth/:provider/callback', to: 'sessions#create'
