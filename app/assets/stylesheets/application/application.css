@@ -166,11 +166,9 @@
 body {
     background-color: #8A8A8A;
 }
-
 .banner-section { 
     height: 400px;
 }
-
 
 /* NAVBAR */
 .navbar {
@@ -178,7 +176,6 @@ body {
     background-color: #FFFFFF;
     border: 0;
 }
-
 ul.nav.navbar-nav.navbar-right li a {
     color: #121212;
     text-transform: uppercase;
@@ -191,13 +188,10 @@ ul.nav.navbar-nav.navbar-right li a:hover {
     color: #121212;
     font-weight: bold;
 }
-
 a:hover{
     text-decoration: none;
     color: #000000;
 }
-
-
 
 /* FOOTER */
 footer {
@@ -209,7 +203,6 @@ footer {
     color: #FFFFFF;
     padding: 2rem 4rem;
 }
-
 .join-our-email-list {
     width: 200px;
 }
@@ -228,9 +221,7 @@ footer {
     color: #FFFFFF;
 }
 
-
 /* WELCOMES INDEX STYLING */
-
 .index-banner-one {
     background-color: #7D7D7D;
     vertical-align: middle;
@@ -278,11 +269,9 @@ footer {
 }
 .index-banner-three div:nth-child(2) {
     background-color: #FFFFFF;
-    /*padding: 8rem 0;*/
 }
 .index-banner-three div:nth-child(3) {
     background-color: #FFFFFF;
-    /*padding: 8rem 0;*/
 }
 .choose-your-style-banner {
     background-color: #FFFFFF;
@@ -298,7 +287,6 @@ footer {
 .index-banner-four div:nth-child(2) {
     padding: 0;
 }
-
 .index-banner-five {
     height: 575px;
     background-color: #FFFFFF;
@@ -306,7 +294,6 @@ footer {
 #welcomes-index-pima-model {
     height: 100%;
 }
-
 #welcome-index-vneck{
    height: 325px; 
    width: 300px;
@@ -324,18 +311,37 @@ footer {
     width: 300px;
 }
 
-
 /* PRODUCTS */
-
-.product-container {
+.products-container, .plans-container {
     margin-top: 50px;
 }
 .shirt-banner-row {
+    /*height: 500px;*/
     background-color: #FFFFFF;
-    padding: 25px 0 0 0;
+    padding: 20px 0 0 0;
 }
 .shirt-image {
     height: 300px;
     width: 300px;
 }
+
+/* PLANS */
+.plans-banner-one {
+    background-color: #FFFFFF;
+    padding: 20px 0 0 0;
+    height: 600px;
+}
+.plans-banner-two {
+    background-color: #7D7D7D;
+    height: 300px;
+    color: #FFFFFF;
+}
+#number-of-shirts, #months-between-shipments {
+    color: #000000;
+}
+.plans-banner-three {
+    background-color: #FFFFFF;
+    height: 450px;
+}
+
 

@@ -1,0 +1,80 @@
+<div class="col-lg-12 plans-container">
+	<section class='row banner-section text-center plans-banner-one'>
+		<h2>CHOOSE A PLAN, OR BUILD YOUR OWN BELOW</h2>
+		<br>
+	    <div class="col-lg-4">
+            <%= image_tag("shirt_image_vneck_black.png", :class => "shirt-image") %>
+            <h3>White V-neck</h3>
+            <h3>$10.00/month</h3>
+            <button class='btn-orange'>Choose Shirts</button>
+        </div>      
+        <div class="col-lg-4">
+            <%= image_tag("shirt_image_vneck_black.png", :class => "shirt-image") %>
+            <h3>Gray V-neck</h3>
+            <h3>$10.00/month</h3>
+            <button class='btn-orange'>Choose Shirts</button>
+        </div>
+        <div class="col-lg-4">
+            <%= image_tag("shirt_image_vneck_black.png", :class => "shirt-image") %>
+            <h3>Black V-neck</h3>
+            <h3>$10.00/month</h3>
+            <button class='btn-orange'>Choose Shirts</button>
+        </div>
+	</section>
+	<section class='row banner-section plans-banner-two text-center'>
+		<h2>BUILD YOUR OWN PLAN</h2>
+		<form action='' method='post'>
+			<input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'>
+			<p>I want to receive 
+				<select name='' id='number-of-shirts'>
+					<option name=''>4</option>
+					<option name='' selected>8</option>
+					<option name=''>16</option>
+					<option name=''>24</option>
+					<option name=''>32</option>
+					<option name=''>40</option>
+					<option name=''>48</option>
+				</select>
+				shirts every
+				<select name='' id='months-between-shipments'>
+					<option name=''>1</option>
+					<option name='' selected>2</option>
+					<option name=''>4</option>
+					<option name=''>6</option>
+					<option name=''>12</option>
+				</select>
+				months
+			</p>
+			<p>
+				$80.00
+				<input type='submit' value='Choose Shirts' class='btn-orange'>
+			</p>
+			<p>$10.00/shirt</p>
+		</form>
+	</section>
+	<section class='row banner-section plans-banner-three text-center'>
+        <h2>LIFE AS A MEMBER</h2>
+        <br>
+        <div class="col-lg-4 text-center">
+            <div class='circle'></div>
+            <br>
+            <h4>LOOK GOOD</h4>
+            <p>Never wear an old, worn</p>
+            <p>out shirt in public</p>
+        </div>
+        <div class="col-lg-4 text-center">
+            <div class='circle'></div>
+            <br>
+            <h4>DO GOOD</h4>
+            <p>Every month you help</p>
+            <p>clothe the less fortunate</p>
+        </div>
+        <div class="col-lg-4 text-center">
+            <div class='circle'></div>
+            <br>
+            <h4>FEEL GOOD</h4>
+            <p>The most comfortable shirt</p>
+            <p>and the feeling of helping</p>
+        </div>
+	</section>
+</div>
