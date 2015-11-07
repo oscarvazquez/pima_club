@@ -17,7 +17,6 @@ Rails.application.routes.draw do
   # ADMIN
   get 'products/admin' => 'products#admin'
 
-
   # RESOURCEFUL ROUTES
   resources :products
   resources :sessions

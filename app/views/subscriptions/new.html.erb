@@ -1,2 +1,67 @@
-<h1>Subscription#new</h1>
-<p>Find me in app/views/subscription/new.html.erb</p>
+<div class = "col-lg-12">
+    <br>
+    <section class="row banner-section subscriptions-new-banner-one">
+        <div class='col-lg-2 text-center'>
+            <%= image_tag('subscriptions_new_shirt_thumbnail_1.png', :class => 'subscriptions-new-shirt-thumbnail subscriptions-shirt-thumbnail-selected') %>
+            <%= image_tag('subscriptions_new_shirt_thumbnail_2.png', :class => 'subscriptions-new-shirt-thumbnail') %>
+            <%= image_tag('subscriptions_new_shirt_thumbnail_3.png', :class => 'subscriptions-new-shirt-thumbnail') %>
+        </div>
+        <div class='col-lg-5 text-center'>
+
+            <%= image_tag('subscriptions_new_shirt_thumbnail_1.png', :class => 'subscriptions-new-shirt-main-image') %>
+        </div>
+        <form class='col-lg-5 text-center'>
+	        <h2>PIMA WHITE V-NECK</h2>
+	        <h2>$10.00</h2>
+	        <p>Subtle and understated. This super-soft v-neck will only get softer with each wear. Dress it up for a night out on the town.</p>
+	        <hr>
+	        <div class="radio radio-inline-block">
+				<label><input type="radio" name="cneck" checked>v-neck</label>
+			</div>
+			<div class="radio radio-inline-block">
+				<label><input type="radio" name="vneck">c-neck</label>
+			</div>
+			<hr>
+			<div>
+				Color 
+				Super White
+				<input type='radio' class="radio radio-inline-block">
+				<input type='radio' class="radio radio-inline-block">
+				<input type='radio' class="radio radio-inline-block">
+			</div>
+			<hr>
+			<div>
+				Size
+				<input type='radio' class="radio radio-inline-block">S
+				<input type='radio' class="radio radio-inline-block" selected>M
+				<input type='radio' class="radio radio-inline-block">L
+				<input type='radio' class="radio radio-inline-block">XL
+			</div>
+			<hr>
+			<div>
+				Quantity
+				<button class='quantity-stepper'>-</button>
+				<input id='quantity-input' type='text' placeholder="2">
+				<button class='quantity-stepper'>+</button>
+			</div>
+			<br>
+			<br>
+			<input type='submit' value='Checkout' class='btn-orange'>
+        </form>
+    </section>    
+    <section class='row spaced'>
+    	<div class="col-lg-4">How many shirts per month?</div>
+    	<div class="col-lg-4">You are missing one more shirt!</div>
+    	<div class="col-lg-4">2 4 6 X</div>
+    </section>  
+    <section class="row banner-section about-banner-three text-center">
+        <div class='col-lg-6'>
+        	<h2>WE GIVE A SHIRT</h2>
+        	<p>Apart from helping you look good, Pima Club is in business to help improve lives and wants your help. With every package, you'll also receive a pre-paid label so you can ship your old shirts to our partner, UNICEF, who helps us give them to the less-fortunate. <b>With every shipment, you are helping change lives.</b></p>
+        </div>
+        <div class="col-lg-6 no-padding">
+            <%= image_tag('subscriptions_new_top_quality.png', :id => 'subscriptions-new-top-quality') %>
+        </div>
+    </section>
+
+</div>

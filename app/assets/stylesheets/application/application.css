@@ -17,20 +17,6 @@
  *= require_self
  */
 
-
-/* TODO: ADD LEGIT NORMALIZE CSS */
-
-*, div, .col-lg-12, .row {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-
-/* TOP NAV */
-
-
-
 /* ADMIN SIDE NAV */
 
 /*#sidebar-wrapper {
@@ -132,13 +118,6 @@
     padding-left: 250px;
 }*/
 
-
-/* CONTENT */
-
-.content {
-    margin-top: 30px;
-}
-
 /*.container.toggled #sidebar-wrapper {
     width: 250px;
 }
@@ -162,15 +141,52 @@
 
 
 
+/* TODO: ADD LEGIT NORMALIZE CSS */
+*, div, .col-lg-12, .row {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
+/* FULL SITE */
 body {
     background-color: #8A8A8A;
 }
 .banner-section { 
     height: 400px;
 }
+.btn-orange {
+    background-color: #F2622E;
+    color: #FFFFFF;
+    width: 150px;
+    height: 50px;
+    font-size: 1em;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #545454;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+.content {
+    margin-top: 34px;
+}
 
-/* NAVBAR */
+/* UTILITY */
+.no-select {
+}
+.spaced {
+    margin: 5rem auto;
+    color: #FFFFFF;
+}
+.no-padding {
+    padding: 0;
+}
+
+/* TOP NAVBAR */
 .navbar {
     padding: .25rem 1rem;
     background-color: #FFFFFF;
@@ -230,29 +246,9 @@ footer {
     color: #FFFFFF;
     font-size: 1.4em;
 }
-.btn-orange {
-    background-color: #F2622E;
-    color: #FFFFFF;
-    width: 150px;
-    height: 50px;
-    font-size: 1em;
-}
 .index-banner-two {
     background-color: #FFFFFF;
     height: 500px;
-}
-.circle {
-    width: 200px;
-    height: 200px;
-    background-color: #545454;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    margin: 0 auto;
-}
-.spaced {
-    margin: 5rem auto;
-    color: #FFFFFF;
 }
 #welcome-index-comfort-guarantee {
     width: 100%;
@@ -312,11 +308,7 @@ footer {
 }
 
 /* PRODUCTS */
-.products-container, .plans-container {
-    margin-top: 50px;
-}
 .shirt-banner-row {
-    /*height: 500px;*/
     background-color: #FFFFFF;
     padding: 20px 0 0 0;
 }
@@ -344,4 +336,69 @@ footer {
     height: 450px;
 }
 
+/* ABOUT */
+#about-index-banner-one-background{
+    height: 400px;
+    width: 100%;
+}
+.about-banner-two {
+    height: 300px;
+    background-color: #7D7D7D;
+    color: #FFFFFF;
+}
+.about-banner-three {
+    height: 400px;
+    background-color: #FFFFFF;
+}
+#about-index-unicef {
+    height: 100%;
+    width: 100%;
+}
+.about-banner-four {
+    height: 500px;
+    background-color: #FFFFFF;
+}
+#about-index-interactive-slider-image {
+    height: 100%;
+    width: 100%;
+}
+#about-index-founders {
+    height: 100%;
+    width: 100%;
+}
 
+/* SUBSCRIPTIONS # NEW */   
+.subscriptions-new-banner-one {
+    height: 600px;
+    background-color: #FFFFFF;
+    padding: 30px 0 0 0;
+}
+.subscriptions-new-shirt-thumbnail{
+    height: 125px;
+    width: 125px;
+    margin: 10px auto 10px auto;
+    display: block;
+}
+.subscriptions-new-shirt-main-image{
+    height: 400px;
+    width: 400px;
+}
+#subscriptions-new-top-quality{
+    height: 100%;
+    width: 100%;
+}
+.subscriptions-shirt-thumbnail-selected {
+    border: 2px solid orange;
+}
+.radio-inline-block {
+    /*vertical-align: top;*/
+    display: inline-block;
+    padding: 0 2rem;
+}
+.quantity-stepper{
+    width: 20px;
+    height: 20px;
+}
+#quantity-input {
+    width: 25px;
+}
