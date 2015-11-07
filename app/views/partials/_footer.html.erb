@@ -1,38 +1,54 @@
 <style type='text/css'>
+	a:hover{
+		text-decoration: none;
+		color: #000000;
+	}
 	footer {
 		width: 100%;
+		height: 100px;
 		margin: 0 !important;
 		border: 0;
-		background-color: #222222;
-		color: #777777;
+		background-color: #8A8A8A;
+		color: #FFFFFF;
 		padding: 2rem 4rem;
 	}
-	.footer-links {
-		list-style-type: none;
-	}
-	.footer-links li a:hover {
-		color: white;
-		text-decoration: none;
+
+	.join-our-email-list {
+		width: 200px;
 	}
 
-	.footer-links li a {
-		color: #777777;
+	.footer-link {
+		color: #FFFFFF;
 	}
+	.footer-link i:hover {
+		color: #000000;
+	}
+	.footer-media {
+		font-size: 50px;
+		color: #FFFFFF;
+	}
+	.footer-media-small {
+		font-size: 25px;
+		color: #FFFFFF;
+	}
+
 </style>
 
-<div class='col-lg-offset-1 col-lg-4'>
-	<h3 class='footer-links'>Footer stuff</h3>
-	<p>© 2012 - 2015 HF Global, Inc. All Rights Reserved.</p>
-	<p>Harry's, H', Mammoth Design, Give a Shave, Truman, and HF are trademarks and/or registered trademarks of HF Global, Inc.</p>
-	<p>Privacy Policy | Terms of Use</p>
-</div>
 
-<div class='col-lg-offset-2 col-lg-4'>
-	<h3>Contact</h3>
-	<ul class='footer-links'>
-		<li><a href="#">links asdfasdf asdf sadf</a></li>
-		<li><a href="#">links asdf asdasdf adfs</a></li>
-		<li><a href="#">links asdfasd fadfs sad</a></li>
-		<li><a href="#">links asdf asddfas  fasd</a></li>
-	</ul>
-</div>
+<footer>
+	<div class="col-lg-3">
+		<p><i class='fa fa-envelope footer-media-small'><a href='#' class='footer-link'></i> HELP@PIMACLUB.COM</a></p>
+	</div>
+	<div class="col-lg-3">
+		<p><i class='fa fa-phone footer-media-small'></i><a href='#' class='footer-link'> (888) 555 5555</a></p>
+	</div>
+	<div class="col-lg-3" style='height:100px'>
+			<a href="#" class='footer-link'><i class='fa fa-facebook-official footer-media'></i></a>
+			<a href="#" class='footer-link'><i class='fa fa-instagram footer-media'></i></a>
+			<a href="#" class='footer-link'><i class='fa fa-twitter-square footer-media'></i></a>
+			<a href="#" class='footer-link'><i class='fa fa-google-plus-square footer-media'></i></a>
+	</div>
+	<div class="col-lg-3">
+		<button class='btn-orange join-our-email-list'>JOIN OUR EMAIL LIST</button>
+	</div>
+</footer>

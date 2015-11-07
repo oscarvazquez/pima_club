@@ -1,37 +1,28 @@
-<style type='text/css'>
-    
-    .navbar {
-        padding: .25rem 1rem;
-    }
-
-/*    .navbar-center {
-        position: absolute;
-    }*/
-
-</style>
-
 <nav class="navbar-inverse navbar-fixed-top navbar" role="navigation">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
             <i class="fa fa-bars"></i>
         </button>
         <a class="navbar-brand page-scroll" href="/">
-            <i class="fa fa-play-circle"></i>  <span class="light">Pima Club</span>
+            <span>PimaClub</span>
         </a>
     </div>
 
     <div class="collapse navbar-collapse navbar-main-collapse">
-        <div class='navbar-center'>
-            <ul class="nav navbar-nav">
+        <!-- <div class='navbar-center'> -->
+            <!-- <ul class="nav navbar-nav"> -->
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+
+            <!-- </ul> -->
+        <!-- </div> -->
+
+        <ul class="nav navbar-nav navbar-right">
                 <li class="hidden"><a href="#page-top"></a></li>
                 
-                <li><a href="/subscriptions">Subscriptions</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/about">About Us</a></li>
-            </ul>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
+                <li><a href="/products">Shirts</a></li>
+                <li><a href="/subscriptions">Plans</a></li>
+                <li><a href="/about">About Pima</a></li>
+
             <% if logged_in? -%>
                 <li>
                     <a href = "/sessions/destroy">Log Out</a>

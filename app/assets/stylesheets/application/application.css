@@ -156,6 +156,77 @@
 
 
 
-/* MISC 
+
+
+
+
+
+
+
+body {
+    background-color: #8A8A8A;
+}
+
+.banner-section { 
+    height: 400px;
+}
+
+
+/* NAVBAR */
+.navbar {
+    padding: .25rem 1rem;
+    background-color: #FFFFFF;
+    border: 0;
+}
+
+ul.nav.navbar-nav.navbar-right li a {
+    color: #121212;
+    text-transform: uppercase;
+    font-weight: bold;
+}    
+ul.nav.navbar-nav.navbar-right li a:hover {
+    color: #121212;
+}
+.navbar-header a span {
+    color: #121212;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 100px;
+    margin: 0 !important;
+    border: 0;
+    background-color: #8A8A8A;
+    color: #FFFFFF;
+    padding: 2rem 4rem;
+}
+
+.join-our-email-list {
+    width: 200px;
+}
+.footer-link {
+    color: #FFFFFF;
+}
+.footer-link i:hover {
+    color: #000000;
+}
+.footer-media {
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.footer-media-small {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
 
 

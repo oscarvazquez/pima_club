@@ -1,94 +1,238 @@
+<style type='text/css'>
+    
+    /* WELCOMES INDEX STYLING */
+
+    .index-banner-one {
+        background-color: #7D7D7D;
+        vertical-align: middle;
+    }
+    .index-banner-one div:first-child {
+        color: #FFFFFF;
+        font-size: 1.4em;
+    }
+    .btn-orange {
+        background-color: #F2622E;
+        color: #FFFFFF;
+        width: 150px;
+        height: 50px;
+        font-size: 1em;
+    }
+    .index-banner-two {
+        background-color: #FFFFFF;
+        height: 500px;
+    }
+    .circle {
+        width: 200px;
+        height: 200px;
+        background-color: #545454;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 100px;
+        margin: 0 auto;
+    }
+    .spaced {
+        margin: 5rem auto;
+        color: #FFFFFF;
+    }
+    #welcome-index-comfort-guarantee {
+        width: 100%;
+        height: 100%;
+    }
+    .index-banner-three {
+        height: 400px;
+    }
+    .index-banner-three div {
+        height: 400px;
+    }
+    .index-banner-three div:nth-child(1) {
+        padding: 0;
+    }
+    .index-banner-three div:nth-child(2) {
+        background-color: #FFFFFF;
+        /*padding: 8rem 0;*/
+    }
+    .index-banner-three div:nth-child(3) {
+        background-color: #FFFFFF;
+        /*padding: 8rem 0;*/
+    }
+    .choose-your-style-banner {
+        background-color: #FFFFFF;
+        height: 500px;
+        box-shadow: 0 5px 5px -2px #000000;
+        position: relative;
+    }
+    .index-banner-four {
+        height: 400px;
+        background-color: #FFFFFF;
+        z-index: -1;
+    }
+    .index-banner-four div:nth-child(2) {
+        padding: 0;
+    }
+
+    .index-banner-five {
+        height: 575px;
+        background-color: #FFFFFF;
+    }
+    #welcomes-index-pima-model {
+        height: 100%;
+    }
+
+    #welcome-index-vneck{
+       height: 325px; 
+       width: 300px;
+    }
+    #welcome-index-crewneck{
+       height: 325px; 
+       width: 300px;
+    }
+    #welcomes-index-happy-children{
+        height: 400px;
+        width: 100%;
+    }
+    #welcomes_index_black_crewneck{
+        height: 325px;
+        width: 300px;
+    }
+
+</style>
+
 <div class = "col-lg-12">
     
     <br>
 
-    <section class="row banner-section">
-        <div class="col-lg-12">
-            <h1>Section</h1>
+    <section class="row banner-section index-banner-one">
+        <div class="col-lg-6 text-center">
+            <h2>YOUR NEW FAVORITE T-SHIRT</h2> 
+            <p>High quality 100% pima cotton tees</p>
+            <p>delivered to your door monthly</p>
+            <button class='btn-orange'>Get Started</button>
+        </div>
+        <div class='col-lg-6 text-center'>
+            <%= image_tag('welcomes_index_pima_model.png', :id => 'welcomes-index-pima-model') %>
         </div>
     </section>
     
-    <section class="row banner-section">
+    <section class="row banner-section index-banner-two text-center">
         <div class="col-lg-12">
-            <h1>Section</h1>
+            <h2>HOW IT WORKS</h2>
+            <br>
+        </div>
+
+        <div class="col-lg-3 text-center">
+            <div class='circle'></div>
+            <br>
+            <h4>STEP 1</h4>
+            <h3>Choose Your Plan</h3>
+            <p>Choose your plan to receive</p>
+            <p>2, 4, or 6 t-shirts/month</p>
+        </div>
+        <div class="col-lg-3 text-center">
+            <div class='circle'></div>
+            <br>
+            <h4>STEP 1</h4>
+            <h3>Choose Your Plan</h3>
+            <p>Choose your plan to receive</p>
+            <p>2, 4, or 6 t-shirts/month</p>
+        </div>
+        <div class="col-lg-3 text-center">
+            <div class='circle'></div>
+            <br>
+            <h4>STEP 1</h4>
+            <h3>Choose Your Plan</h3>
+            <p>Choose your plan to receive</p>
+            <p>2, 4, or 6 t-shirts/month</p>
+        </div>
+        <div class="col-lg-3 text-center">
+            <div class='circle'></div>
+            <br>
+            <h4>STEP 1</h4>
+            <h3>Choose Your Plan</h3>
+            <p>Choose your plan to receive</p>
+            <p>2, 4, or 6 t-shirts/month</p>
         </div>
     </section>
 
-    <section class="row banner-section">
+    <div class="row text-center spaced">
         <div class="col-lg-12">
-            <h1>Section</h1>
+            <button class='btn-orange'>See Our Shirts</button>
+        </div>
+    </div>
+
+    <section class="row banner-section index-banner-three">
+        <div class="col-lg-12">
+            <div class="col-lg-6">
+                <%= image_tag("welcomes_index_comfort_guarantee.png", :id => 'welcome-index-comfort-guarantee') %>
+            </div>
+            <div class="col-lg-6 text-center">
+                <h2>100% PIMA COTTON</h2>
+                <p>Our cotton is hand-picked in the mountains of Peru and driven down</p>
+                <p>to the city where it is made into the most comfortable and the softest</p>
+                <p>t-shirt you've ever worn. <b>Get started today! If your t-shirt isn't what you</b></p>
+                <p><b>expected, send it back within 30 days and get a full refund!</b></p>
+                <button class='btn-orange'>Get Started</button>
+            </div>
         </div>
     </section>
 
-    <section class="row banner-section">
-        <div class="col-lg-12">
-            <h1>Section</h1>
+    <section class="row banner-section choose-your-style-banner text-center">
+        <br>
+        <h2>CHOOSE YOUR STYLE</h2>
+        <br>
+        <div class="col-lg-6 ">
+            <%= image_tag('welcomes_index_vneck.png', :id => 'welcome-index-vneck') %>
+            <h3>V-NECK</h3>  
+        </div>
+        <div class="col-lg-6 ">
+            <%= image_tag('welcomes_index_crewneck.png', :id => 'welcome-index-crewneck') %>
+            <h3>C-NECK</h3>
         </div>
     </section>
 
-    
-
-
-
-
-    <!-- About Section -->
-    <!-- <section id="about" class="content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Pima Club</h2>
-                <p>Based in miami, we noticed this problem in the market place and we decided we're going to fix it by offering blah blah blah laskdjf adslkjf asdlfkjas aslkdfja sdflkasdf</p>
-                <p>We wanted to become the go to blah blah blah place where you can do blah blah blah and our service sets us apart becuase blah blah blah and we promise to always blah blah blah customers</p>
-                <p>Inspirational quote about our attitute towards out customers maybe <a href = "/welcomes/about">Link to more info about us</a></p>
-            </div>
+    <section class="row banner-section index-banner-four text-center">
+        <div class="col-lg-6">
+            <h2>Help Us Give Back</h2>
+            <p>Pima Club goes way beyond comfortable t-shirts. The thing that makes us</p>
+            <p>stand out from the rest and gives a meaning to coming to work every</p>
+            <p>day is giving back to the less fortunate. <b>Every package we send</b></p>
+            <p><b>out comes with a prepaid label which can be used</b></p>
+            <p>to ship your old shirts to our partner, UNICEF.</p>
+            <button class='btn-orange'>Get Started</button>
         </div>
-    </section> -->
-
-    <!-- <section id="product" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Check out Our Products</h2>
-                    <p>Quick description about the products and how awesome it is</p>
-                    <a href="/products" class="btn btn-default btn-lg">Link to products page</a>
-                </div>
-            </div>
+        <div class="col-lg-6">
+            <%= image_tag('welcomes_index_happy_children.png', :id => 'welcomes-index-happy-children') %>
         </div>
-    </section> -->
+    </section>
 
-    <!-- Download Section -->
-   <!--  <section id="subscription" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Subscription details</h2>
-                    <p>More Information about how the product works and blah blah blah why its awesome and more convenient than going to the store blah blah blah </p>
-                    <a href="/subscriptions" class="btn btn-default btn-lg">Link to subscription Page</a>
-                </div>
-            </div>
+    <div class="row text-center spaced">
+        <div class="col-lg-6">
+        <h1>FREE SHIRTS FOR A YEAR</h1>  
+        <p>Earn 1 free shirt for every friend you sign up. 50 friends gets you 1 year of free shirts.</p>
+        <p>Do it again and get another free year!</p>
         </div>
-    </section> -->
+        <div class="col-lg-6">
+            <button class='btn-orange'>INVITE FRIENDS</button>
+        </div>
+    </div>
 
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Information</h2>
-                <p>Feel free to email us about whatever and about information regarding whatever this is just filler text and this is whatever</p>
-                <p><a href="#">pima_club@pima_club.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
-            </div>
+    <section class="row banner-section index-banner-five text-center">
+        <h1>CHOOSE A PLAN</h1>
+        <br>
+        <div class="col-lg-4">
+            <%= image_tag("welcomes_index_black_crewneck.png", :id => "welcomes_index_black_crewneck") %>
+            <h2>2 SHIRTS</h2>
+            <h1>$20/MONTH</h1>
         </div>
-    </section> -->
+        <div class="col-lg-4">
+            <%= image_tag("welcomes_index_black_crewneck.png", :id => "welcomes_index_black_crewneck") %>
+            <h2>4 SHIRTS</h2>
+            <h1>$40/MONTH</h1>
+        </div>
+        <div class="col-lg-4">
+            <%= image_tag("welcomes_index_black_crewneck.png", :id => "welcomes_index_black_crewneck") %>
+            <h2>6 SHIRTS</h2>
+            <h1>$60/MONTH</h1>
+        </div>
+    </section>
 
 </div>
