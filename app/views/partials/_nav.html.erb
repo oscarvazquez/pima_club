@@ -1,3 +1,10 @@
+<style type='text/css'>
+
+    .nav-right {
+        padding: 0 2rem 0 0;
+    }
+
+</style>
 <nav class="navbar-inverse navbar-fixed-top navbar" role="navigation">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -9,13 +16,17 @@
     </div>
 
     <div class="collapse navbar-collapse navbar-main-collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <div id='nav-center-wrapper'>
+            <ul class='nav navbar-nav' id='nav-center'>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right nav-right">
             <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden"><a href="#page-top"></a></li>
-            <li><a href="/products">Shirts</a></li>
-            <li><a href="/subscriptions">Plans</a></li>
-            <li><a href="/about">About Pima</a></li>
 
+                <li class="hidden"><a href="#page-top"></a></li>
+                <li><a href="/products">Shirts</a></li>
+                <li><a href="/subscriptions">Subscriptions</a></li>
+                <li><a href="/about">About Pima</a></li>
             <% if logged_in? -%>
                 <li><a href = "/sessions/destroy">Log Out</a></li>
             <% else -%>
@@ -24,9 +35,12 @@
             <% end %> 
             <% if User.check_role(session[:user_id]) %>
                 <li><a href = "/dashboard">Dashboard</a></li>
-            <% end %>
-                
+            <% end %>      
+
+            <li><a href = "#">Cart</a></li>
         </ul>
+
+
     </div>
 
 </nav>

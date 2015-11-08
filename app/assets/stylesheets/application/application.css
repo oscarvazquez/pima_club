@@ -192,13 +192,12 @@ body {
     background-color: #FFFFFF;
     border: 0;
 }
-ul.nav.navbar-nav.navbar-right li a {
-    color: #121212;
-    text-transform: uppercase;
+ul.nav.navbar-nav.navbar-right li a, ul.nav.navbar-nav li a {
+    color: #777777;
     font-weight: bold;
 }    
-ul.nav.navbar-nav.navbar-right li a:hover {
-    color: #121212;
+ul.nav.navbar-nav.navbar-right li a:hover,ul.nav.navbar-nav li a:hover {
+    color: #000000;
 }
 .navbar-header a span {
     color: #121212;
@@ -272,7 +271,7 @@ footer {
 .choose-your-style-banner {
     background-color: #FFFFFF;
     height: 500px;
-    box-shadow: 0 5px 5px -2px #000000;
+    /*box-shadow: 0 5px 5px -2px #000000;*/
     position: relative;
 }
 .index-banner-four {
